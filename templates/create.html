@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление записи
+{% endblock %}
+
+{% block content %}
+<h1>Добавление вакансии</h1>
+<h4>Обязательно заполните все поля</h4><br>
+
+<form method="post" class="form-control">
+    <input type="text" name="title" placeholder="Название вакансии" class="form-control"><br>
+    <input type="text" name="salary" placeholder="Получаемая зарплата (руб/мес)" class="form-control"><br>
+    <input type="text" name="duties" placeholder="Обязанности" class="form-control"><br>
+    <button class="btn btn-success" type="submit">Добавить</button>
+</form>
+{% endblock %}

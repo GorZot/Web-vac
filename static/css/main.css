@@ -1,0 +1,154 @@
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    pading: 10%;
+    z-index: 1000;
+    background: #b7beb0;
+    -webkit-box-shadow: 0 5px 25px rgba(100, 0, 100, 0.15);
+            box-shadow: 0 5px 25px rgba(100, 0, 100, 0.15);
+}
+
+.header__img {
+    height: 10cm;
+    width: 10cm;
+}
+
+body {
+    margin: 0;
+    background: #b7beb0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+header, footer {
+    padding: 100px;
+    background-color: #bfb47f;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 100vh;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0;
+    padding-bottom: 30px;
+
+    flex: 1 1 auto;
+}
+
+.row {
+    padding: 50px 0;
+ }
+
+.separator {
+    margin-bottom: 30px;
+    width: 35px;
+    height: 3px;
+    background-color: #9C1A1C;
+    border: none;
+}
+
+.title {
+    text-align: center;
+}
+
+.title . row {
+    padding: 50px 0 0;
+}
+
+.title h1 {
+    text-transform: uppercase;
+}
+
+.title .separator {
+    margin: 0 auto 10px;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.item .item-in {
+    background: #bfb47f;
+    padding: 40px;
+    position: relative;
+}
+.item .item-in:hover:before {
+    width: 100%;
+}
+
+.item .item-in:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #0f880d;
+    right: 0;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+}
+
+.item h4 {
+    font-size: 18px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.item p {
+    font-size: 12px;
+}
+
+.item a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #0f880d;
+    margin-top: 10px;
+}
+
+.item a i {
+    opacity: 0;
+    padding-left: 0;
+    transition: 0.4s;
+    font-size: 24px;
+    display: inline-block;
+    top: 5px;
+    position: relative;
+}
+
+.item a:hover {
+    text-decoration: none;
+}
+
+.item a:hover i {
+    padding-left: 10px;
+    opacity: 1;
+    font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
